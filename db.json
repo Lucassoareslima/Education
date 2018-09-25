@@ -1,0 +1,57 @@
+{
+  "Cursos": [
+    {
+      "id": 1,
+      "titulo": "Programção Java",
+      "descricao": "Venha aprender a programar em Java",
+      "valor": 29.99,
+      "valor_txt": "29.99",
+      "img": "http://pluspng.com/img-png/java-png-java-june-1-2014-public-728.png",
+      "aulas": []
+    }
+  ],
+  "Usuarios": [
+    {
+      "name": "lucas",
+      "email": "Lucas@gmail.com",
+      "senha": "Lucas@",
+      "id": 1
+    },
+    {
+      "name": "Lucas",
+      "email": "Lucas@gmail.com",
+      "senha": "Lycas",
+      "id": 2
+    },
+    {
+      "name": "Lucas",
+      "email": "Lucas@gmail.com",
+      "senha": "Lycas",
+      "id": 3
+    },
+    {
+      "name": "Lucas",
+      "email": "Lucas@gmail.com",
+      "senha": "Lycas",
+      "id": 4
+    },
+    {
+      "name": "Fernando",
+      "email": "ferelivia@amorsemlimite.com",
+      "senha": "livia",
+      "id": 5
+    },
+    {
+      "name": "jsdiojs",
+      "email": "",
+      "senha": "oskpsks",
+      "id": 6
+    },
+    {
+      "name": "skskosp",
+      "email": "",
+      "senha": "skpos",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<!--
+  Generated template for the PerfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Perfil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <<ion-list>
+
+  <ion-item>
+    <ion-icon name="person" item-start color="primary"></ion-icon>
+    <ion-label>Usuario</ion-label>
+    <ion-input type="text"[(ngModel)]='usuario.name'></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="lock" item-start color="primary"></ion-icon>
+    <ion-label>Senha</ion-label>
+    <ion-input type="password" [(ngModel)]='usuario.senha'></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-icon name="mail" item-start color="primary"></ion-icon>
+    <ion-label>Email</ion-label>
+    <ion-input type="mail"[(ngModel)]='usuario.email'></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button ion-button (click)="editUser ()">Editar</button>
+  <button ion-button color="secondary" (click)="cancelar()">Voltar</button>
+</div>
+
+</ion-content>
