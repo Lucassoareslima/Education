@@ -33,7 +33,7 @@ export class LoginPage {
 
     logUser(){
         this.usuProv.logUser(this.usuario).subscribe(res =>{
-          this.usuProv.setStorage("usuario",res);
+          this.usuProv.setStorage("usuario", res);
         console.log(res);
       }, erro => {
         console.log("Erro" + erro.mensage);

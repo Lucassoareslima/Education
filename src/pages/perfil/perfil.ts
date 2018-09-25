@@ -4,6 +4,7 @@ import { HomePage } from '../../pages/home/home';
 import {IUsuario} from '../../interfaces/IUsuario';
 import { UsuariosProvider } from '../../providers/usuarios/usuarios';
 
+
 /**
  * Generated class for the PerfilPage page.
  *
@@ -24,18 +25,21 @@ export class PerfilPage {
     }
 
     ionViewDidLoad() {
-      let usuario = {
-        "name": "lucas",
-        "email": "Lucas@gmail.com",
-        "senha": "26041995",
-        "id": 1
-      };
 
-      this.usuProv.editUser(usuario).subscribe(res =>{
-        this.usuario = res;
-      }, erro => {
-        console.log("Erro" + erro.mensage);
-    });
+      this.usuProv.getStorage("Usuarios").then(usuario => {
+        if(usuario){
+          this.usuario = usuario;
+          this.usuProv.editUser(usuario).subscribe(res =>{
+            this.usuario = res;
+          }, erro => {
+            console.log("Erro" + erro.mensage);
+        });
+        }else{
+          this.cancelar();
+        }
+        });
+
+
 
     }
 
